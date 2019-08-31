@@ -5,6 +5,11 @@
 # seed  - starting seed value
 generateY <- function(X, beta, sigma, seed = 5832652){
   #[ToDo] Set seed and generate Y following linear model
+  # setting seed
+  set.seed(seed)
+  
+  # calculate  Y or target
+  Y =  (X %*% beta) + rnorm(length(beta), 0, sigma^2)
   
   # Return Y
   return(Y)
@@ -15,7 +20,8 @@ generateY <- function(X, beta, sigma, seed = 5832652){
 # Y -response
 calculateBeta <- function(X, Y){
   # Calculate beta_LS
-  
+   
+
   # Return beta
   return(beta_LS)
 }
