@@ -19,8 +19,8 @@ generateY <- function(X, beta, sigma, seed = 5832652){
 # X - design matrix
 # Y -response
 calculateBeta <- function(X, Y){
-  # Calculate beta_LS
   
+  # Calculate beta_LS
   beta_LS = as.numeric(solve(t(X) %*% X) %*% (t(X) %*% Y))
 
   # Return beta
@@ -28,7 +28,11 @@ calculateBeta <- function(X, Y){
 }
 
 # Calculate MSE
+# beta - given parameter 
+# beta_LS - estimated parameter
 calculateMSE <- function(beta, beta_LS){
+  
+  # calculate MSE
   
   # Return MSE - error ||beta - beta_LS||_2^2
   return(MSE)
