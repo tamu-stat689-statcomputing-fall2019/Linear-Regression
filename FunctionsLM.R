@@ -9,7 +9,7 @@ generateY <- function(X, beta, sigma, seed = 5832652){
   set.seed(seed)
   
   # calculate  Y or target
-  Y =  (X %*% beta) + rnorm(length(beta), 0, sigma)
+  Y =  (X %*% beta) + rnorm(nrow(X), 0, sigma)
   
   # Return Y
   return(Y)
