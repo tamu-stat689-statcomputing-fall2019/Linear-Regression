@@ -1,7 +1,3 @@
-Getting started
-
-Student: Kumar/Nitesh
-
 Potentially helpful resources:
 
   * [Happy Git with R](https://happygitwithr.com)
