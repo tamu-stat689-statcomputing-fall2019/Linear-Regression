@@ -1,4 +1,4 @@
-# Assignment 1 - Getting started
+Getting started
 
 Student: Kumar/Nitesh
 
